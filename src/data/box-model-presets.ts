@@ -1,0 +1,10 @@
+import type { CssPreset } from './css-properties';
+
+export const BOX_MODEL_PRESETS: CssPreset[] = [
+  { name: 'Default', category: 'Basics', values: { 'width': '200', 'height': '200', 'box-sizing': 'content-box', 'padding-top': '20', 'padding-right': '20', 'padding-bottom': '20', 'padding-left': '20', 'border-width': '4', 'margin-top': '16', 'margin-right': '16', 'margin-bottom': '16', 'margin-left': '16' } },
+  { name: 'No Padding', category: 'Basics', values: { 'width': '200', 'height': '200', 'box-sizing': 'content-box', 'padding-top': '0', 'padding-right': '0', 'padding-bottom': '0', 'padding-left': '0', 'border-width': '2', 'margin-top': '16', 'margin-right': '16', 'margin-bottom': '16', 'margin-left': '16' } },
+  { name: 'Border Box', category: 'Box Sizing', values: { 'width': '200', 'height': '200', 'box-sizing': 'border-box', 'padding-top': '20', 'padding-right': '20', 'padding-bottom': '20', 'padding-left': '20', 'border-width': '4', 'margin-top': '16', 'margin-right': '16', 'margin-bottom': '16', 'margin-left': '16' } },
+  { name: 'Large Padding', category: 'Padding', values: { 'width': '200', 'height': '200', 'box-sizing': 'content-box', 'padding-top': '40', 'padding-right': '40', 'padding-bottom': '40', 'padding-left': '40', 'border-width': '2', 'margin-top': '8', 'margin-right': '8', 'margin-bottom': '8', 'margin-left': '8' } },
+  { name: 'Thick Border', category: 'Border', values: { 'width': '200', 'height': '200', 'box-sizing': 'content-box', 'padding-top': '16', 'padding-right': '16', 'padding-bottom': '16', 'padding-left': '16', 'border-width': '16', 'margin-top': '16', 'margin-right': '16', 'margin-bottom': '16', 'margin-left': '16' } },
+  { name: 'Asymmetric', category: 'Advanced', values: { 'width': '250', 'height': '150', 'box-sizing': 'content-box', 'padding-top': '10', 'padding-right': '40', 'padding-bottom': '30', 'padding-left': '10', 'border-width': '4', 'margin-top': '8', 'margin-right': '24', 'margin-bottom': '16', 'margin-left': '8' } },
+];

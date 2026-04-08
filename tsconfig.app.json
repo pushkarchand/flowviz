@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "esnext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@browser/*": ["src/pages/browser/*"],
+      "@css/*": ["src/pages/css/*"],
+      "@js/*": ["src/pages/js/*"],
+      "@data/*": ["src/data/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@styles/*": ["src/styles/*"],
+      "@shared/*": ["src/components/shared/*"],
+      "@engine/*": ["src/engine/*"],
+      "@content/*": ["src/content/*"],
+      "@utils/*": ["src/utils/*"],
+      "@i18n": ["src/i18n"],
+      "@i18n/*": ["src/i18n/*"]
+    }
+  },
+  "include": ["src"]
+}
