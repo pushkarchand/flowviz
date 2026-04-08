@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(m => ({ default: m.default })));
 import { ThemeContextProvider } from './contexts/ThemeContext';
 import { PageShell } from './components/shared/PageShell';
 
@@ -43,6 +44,8 @@ const App: React.FC = () => (
           <Route path="browser/paint" element={<Suspense fallback={<Loading />}><RenderingPipelinePage /></Suspense>} />
           <Route path="browser/compositing" element={<Suspense fallback={<Loading />}><RenderingPipelinePage /></Suspense>} />
         </Route>
+        {/* 404 Not Found Route */}
+        <Route path="*" element={<Suspense fallback={<Loading />}><NotFoundPage /></Suspense>} />
       </Routes>
     </BrowserRouter>
   </ThemeContextProvider>
